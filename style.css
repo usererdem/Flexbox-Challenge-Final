@@ -2,6 +2,8 @@
 font-family: 'Oswald', sans-serif; */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -14,6 +16,26 @@ img {
   max-width: 100%;
 }
 
+h1,
+h2 {
+  font-family: 'Oswald', sans-serif; 
+}
+
+h2 {
+  color: #a59678;
+}
+
+.btn {
+  background-color: #a59678;
+  border-radius: 100px;
+  padding: 0.25em 1em;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+}
+
 /* ---------- Layout ---------- */
 .row {
   display: flex;
@@ -23,7 +45,7 @@ img {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   max-width: 1200px;
 
@@ -44,6 +66,7 @@ header {
   position: absolute;
   width: 100%;
   text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
 
   display: flex;
   flex-direction: column;
@@ -66,14 +89,11 @@ header {
   margin-bottom: 0.75rem;
 }
 
-
-
 .nav__link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
 }
-
 
 /* ---------- Hamburger Button and functionality for nav menu ---------- */
 .nav--visible {
@@ -129,4 +149,75 @@ header {
 
 .hamburger::after {
   transform: translateY(3px);
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  background: #3B4050;
+  min-height: 100vh;
+}
+
+.hero__heading {
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+.colored-h1 {
+  color: #a59678;
+}
+
+.hero__text {
+  color: #a6a8ad;
+  font-size: 24px;
+}
+
+.hero__text p {
+  margin-bottom: 3rem;
+}
+
+/* ---------- Features Section ---------- */
+.section-features {
+  background: #cacfdfcc;
+  padding: 2rem 0;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.features__heading {
+  font-family: 'Oswald', sans-serif;
+  color: #a59678;
+  font-size: 30px;
+  margin-bottom: .5rem;
+}
+
+.features__text {
+  font-size: 18px;
+}
+
+/* ---------- Main Section ---------- */
+.main {
+  padding: 2rem 0;
+  
+}
+
+.primary-content {
+
+}
+
+.primary-content__title {
+  font-size: 36px;
+}
+
+.primary-content__text {
+  font-size: 18px;
+}
+
+.primary-content__img {
+  min-height: 200px;
 }
