@@ -5,7 +5,128 @@ font-family: 'Oswald', sans-serif; */
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   font-size: 1.3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ---------- Layout ---------- */
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  position: relative;
+
+  gap: 30px;
+}
+
+/* ---------- Navigation Menu Mobile ---------- */
+header {
+  background-color: #2e323f;
+  padding: 1.2rem 0;
+}
+
+.nav {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+  width: 100%;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.logo {
+  height: 30px;
+}
+
+/* Nav List */
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+.nav__item {
+  margin-bottom: 0.75rem;
+}
+
+
+
+.nav__link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+
+/* ---------- Hamburger Button and functionality for nav menu ---------- */
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #a59678;
+  color: white;
+  transition: opacity 250ms ease;
+
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
 }
