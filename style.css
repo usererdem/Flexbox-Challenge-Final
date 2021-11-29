@@ -18,7 +18,7 @@ img {
 
 h1,
 h2 {
-  font-family: 'Oswald', sans-serif; 
+  font-family: "Oswald", sans-serif;
 }
 
 h2 {
@@ -33,7 +33,7 @@ h2 {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 /* ---------- Layout ---------- */
@@ -153,7 +153,7 @@ header {
 
 /* ---------- Hero Section ---------- */
 .hero {
-  background: #3B4050;
+  background: #3b4050;
   padding: 2rem 0;
 }
 
@@ -190,10 +190,10 @@ header {
 }
 
 .features__heading {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #a59678;
   font-size: 30px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .features__text {
@@ -220,7 +220,7 @@ header {
 }
 
 .content-box {
-  background: #3B4050;
+  background: #3b4050;
   text-align: center;
   padding: 2rem 1rem;
   margin: 1rem 0;
@@ -237,7 +237,7 @@ header {
 
 /* ---------- Footer ---------- */
 .footer {
-  background: #3B4050;
+  background: #3b4050;
   padding: 2rem 0;
 }
 
@@ -256,12 +256,12 @@ header {
 .footer-texts h3 {
   color: #a59678;
   font-size: 21px;
-  margin: 2rem 0 .5rem 0;
+  margin: 2rem 0 0.5rem 0;
 }
 
 .footer-texts p {
   font-size: 16px;
-  color: #6F737F;
+  color: #6f737f;
 }
 
 .footer-texts__list {
@@ -272,6 +272,53 @@ header {
 
 .footer-texts__link {
   text-decoration: none;
-  color: #6F737F;
-  padding: .5rem;
+  color: #6f737f;
+  padding: 0.5rem;
+}
+
+@media (min-width: 700px) {
+  .row {
+    flex-direction: row;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+ 
+  .nav {
+    visibility: visible;
+    display: flex;
+    height: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+    gap: 40px;
+  }
+
+  .nav__list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+  }
+
+  .btn {
+    transition: all 0.3s;
+    display: inline-block;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: rgba(228, 10, 10, 0.24) 0px 3px 10px;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
 }
