@@ -25,6 +25,7 @@ h2 {
   color: #a59678;
 }
 
+/* ----- Button ----- */
 .btn {
   background-color: #a59678;
   border-radius: 100px;
@@ -276,26 +277,36 @@ header {
   padding: 0.5rem;
 }
 
+.footer-texts h3 {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 700px) {
+  .container {
+    width: 90%;
+    gap: 5px;
+  }
+
   .row {
     flex-direction: row;
   }
 
+  /* ----- Navigation ----- */
   .nav-toggle {
     display: none;
   }
- 
+
   .nav {
     visibility: visible;
     display: flex;
     height: auto;
     flex-grow: 1;
     flex-shrink: 1;
-    
+
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-    
+
     gap: 40px;
   }
 
@@ -304,6 +315,32 @@ header {
     align-items: center;
     gap: 15px;
     margin: 0;
+  }
+
+  /* ----- Hero Section ----- */
+  .hero__heading {
+    width: 50%;
+  }
+
+  .hero__text {
+    width: 50%;
+  }
+
+  /* ----- Features Section ----- */
+  .section-features {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* ----- Main Section ----- */
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-content {
+    display: flex;
+    gap: 20px;
   }
 
   .btn {
@@ -320,5 +357,33 @@ header {
     display: flex;
     flex-direction: row;
     align-self: center;
+  }
+
+  .footer-texts {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  header {
+    padding: 1.5rem 0;
+  }
+
+  .footer-texts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .footer-texts__about {
+    width: 60%;
+  }
+
+  .footer-texts__other {
+    width: 40%;
+    font-size: 16px;
   }
 }
