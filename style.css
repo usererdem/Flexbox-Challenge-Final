@@ -446,7 +446,7 @@ header {
   }
 
   .primary-content__text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.5;
 
     margin-bottom: 2rem;
@@ -457,6 +457,14 @@ header {
     width: 40%;
   }
   /* ----- Footer Section ----- */
+  .footer {
+    padding: 4.5rem 0;
+  }
+
+  .footer__heading {
+    font-size: 3.8rem;
+    margin-bottom: 2.5rem;
+  }
   .footer-texts {
     width: 100%;
     display: flex;
