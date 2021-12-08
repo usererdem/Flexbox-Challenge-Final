@@ -383,6 +383,14 @@ header {
     padding: 1.5rem 0;
   }
 
+  .nav {
+    gap: 65px;
+  }
+
+  .nav__list {
+    gap: 45px;
+  }
+
   /* ----- Hero Section ----- */
   .hero {
     min-height: 95vh;
