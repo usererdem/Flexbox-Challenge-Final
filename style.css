@@ -366,24 +366,104 @@ header {
 }
 
 @media (min-width: 1000px) {
+   /* ----- Layout ----- */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container {
+    width: 90%;
+    gap: 30px;
+  }
+
+  /* ----- Header ----- */
   header {
     padding: 1.5rem 0;
   }
 
+  /* ----- Hero Section ----- */
+  .hero {
+    min-height: 95vh;
+    display: flex;
+    padding: 0;
+  }
+
+  .hero__heading {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 12rem;
+  }
+
+  .btn--hero {
+    font-size: 2rem;
+
+    padding: 0.5rem 3rem;
+  }
+
+  /* ----- Features Section ----- */
+  .section-features {
+    padding: 8rem 0;
+  }
+
+  .features {
+    padding: 0 1rem;
+  }
+
+  .features__heading {
+    margin-bottom: 1rem;
+  }
+
+  .features__text {
+    line-height: 1.5;
+  }
+
+  /* ----- Main Section ----- */
+  .main {
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    gap: 7rem;
+  }
+
+  .primary-content {
+    width: 60%;
+  }
+
+  .primary-content__title {
+    font-size: 2.8rem;
+  }
+
+  .primary-content__text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+    margin-bottom: 2rem;
+  }
+  .side-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+  /* ----- Footer Section ----- */
   .footer-texts {
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 80px;
     text-align: left;
+    line-height: 1.4;
   }
 
   .footer-texts__about {
-    width: 60%;
+    width: 70%;
   }
 
   .footer-texts__other {
-    width: 40%;
+    width: 30%;
     font-size: 16px;
   }
 }
